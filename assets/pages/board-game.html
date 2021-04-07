@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/board-header.css">
+    <link rel="stylesheet" href="../css/board-main.css">
   </head>
 
   <body>
@@ -36,6 +37,38 @@
           </div>
         </div>
       </header>
+
+      <main>
+        <div class="player_card">
+          <div class="player_card-quantity">
+            <p>Suas cartas:</p>
+            <span>9</span>
+          </div>
+
+          <div class="player_card-back">
+            <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
+          </div>
+          <div class="player_card-front"></div>
+        </div>
+
+        <div class="play_btns">
+          <p>VS</p>
+          <button class="button">Sortear carta</button>
+          <button class="button" disabled>Jogar</button>
+        </div>
+
+        <div class="opponent_card">
+          <div class="opponent_card-quantity">
+            <p>Cartas do oponente:</p>
+            <span>9</span>
+          </div>
+
+          <div class="opponent_card-back">
+            <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
+          </div>
+          <div class="opponent_card-front"></div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
