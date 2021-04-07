@@ -1,4 +1,4 @@
-main {
+.board {
   width: 80%;
   margin: auto;
 
@@ -6,8 +6,9 @@ main {
   align-items: center;
   justify-content: space-around;
 
-  position: inherit;
+  position: relative;
   top: 5rem;
+
 }
 
 /* CARDS: */
@@ -59,4 +60,13 @@ main {
 .play_btns .button[disabled]:hover {
   background-color: var(--color-dark-green);
   transition: none;
+}
+
+/* BOTTOM: */
+.turn_play {
+  margin-top: 3rem;
+
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-white);
 }
