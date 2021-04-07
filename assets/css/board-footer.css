@@ -1,0 +1,26 @@
+.footer {
+  width: 90%;
+
+  margin: auto;
+  position: relative;
+  top: 4rem;
+
+  display: flex;
+  align-items: center;
+  
+}
+
+.footer_social_icons a{
+  transition: box-shadow .8s ease;
+}
+.footer_social_icons a:hover{
+  box-shadow: 4px 8px 8px var(--color-dark-green);
+}
+
+.footer_result {
+  margin-left: 22%;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 2rem;
+  font-size: 3rem;
+}
