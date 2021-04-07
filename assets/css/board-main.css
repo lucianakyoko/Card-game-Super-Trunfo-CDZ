@@ -12,13 +12,21 @@
 }
 
 /* CARDS: */
+.player_card,
+.opponent_card {
+  width: 60%;
+
+  margin: auto;
+}
+
 .player_card-quantity,
 .opponent_card-quantity {
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 1rem;
+  margin: auto auto 1rem auto;
 }
 
 .player_card-quantity p,
@@ -32,6 +40,12 @@
   font-size: 1.4rem;
 }
 
+.player_card-back,
+.player_card-front,
+.opponent_card-back,
+.opponent_card-front {
+  margin: auto 20%;
+}
 /* BUTTONS */
 .play_btns {
   display: flex;
@@ -40,7 +54,7 @@
 
 }
 
-.play_btns p {
+.play_btns p:first-child {
   font-size: 4rem;
   color: var(--color-white);
   -webkit-text-stroke: 1px black;
@@ -62,11 +76,12 @@
   transition: none;
 }
 
-/* BOTTOM: */
 .turn_play {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  padding: 1rem;
 
   font-size: 1.2rem;
+  line-height: 2;
   text-align: center;
   color: var(--color-white);
 }
