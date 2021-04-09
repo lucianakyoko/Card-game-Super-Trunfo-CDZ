@@ -42,16 +42,37 @@
 
       <main>
         <div class="board">
-          <div class="player_card">
+          <div class="player_side">
             <div class="player_card-quantity">
               <p>Suas cartas:</p>
               <span>9</span>
             </div>
 
-            <div class="player_card-back">
-              <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
+            <div class="card_container">
+              <div class="player_card">
+                <figure class="player_card-back">
+                  <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
+                </figure>
+                <figure class="player_card-front">
+                  <h2>shiryu de dragão</h2>
+                  <span>100</span>
+                  <div class="player_card_attributes">
+                    <div class="card_attributes-cosmos">
+                      <input type="radio" name="attribute" id="cosmo" value="cosmo">
+                      <label for="cosmo">cosmo 95</label>
+                    </div>
+                    <div class="card_attributes-attack">
+                      <input type="radio" name="attribute" id="attack" value="attack">
+                      <label for="attack">ataque 95</label>
+                    </div>
+                    <div class="card_attributes-defense">
+                      <input type="radio" name="attribute" id="defense" value="defense">
+                      <label for="defense">defesa 95</label>
+                    </div>
+                  </div>
+                </figure>
+              </div>
             </div>
-            <div class="player_card-front"></div>
           </div>
 
           <div class="play_btns">
@@ -61,17 +82,38 @@
             <p class="turn_play">Sua vez de escolher o atributo.</p>
           </div>
 
-          <div class="opponent_card">
+          <div class="opponent_side">
             <div class="opponent_card-quantity">
               <p>Cartas do oponente:</p>
               <span>9</span>
             </div>
 
-            <div class="opponent_card-back">
-              <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
+            <div class="card_container">
+              <div class="opponent_card">
+                <figure class="opponent_card-back">
+                  <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
+                </figure>
+                <figure class="opponent_card-front">
+                  <h2>shiryu de dragão</h2>
+                  <span>100</span>
+                  <div class="opponent_card_attributes">
+                    <div class="card_attributes-cosmos">
+                      <input type="radio" name="attribute" id="cosmo" value="cosmo">
+                      <label for="cosmo">cosmo 95</label>
+                    </div>
+                    <div class="card_attributes-attack">
+                      <input type="radio" name="attribute" id="attack" value="attack">
+                      <label for="attack">ataque 95</label>
+                    </div>
+                    <div class="card_attributes-defense">
+                      <input type="radio" name="attribute" id="defense" value="defense">
+                      <label for="defense">defense 95</label>
+                    </div>
+                  </div>
+                </figure>
+              </div>
             </div>
-            <div class="opponent_card-front"></div>
-          </div>         
+          </div>    
         </div>
       </main>
 
