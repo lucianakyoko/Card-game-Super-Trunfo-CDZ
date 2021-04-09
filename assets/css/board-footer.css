@@ -1,13 +1,11 @@
 .footer {
   width: 90%;
 
-  margin: 2rem auto auto auto;
+  margin: 1rem auto auto auto;
   position: relative;
-  top: 4rem;
 
   display: flex;
   align-items: center;
-  
 }
 
 .footer_social_icons {
