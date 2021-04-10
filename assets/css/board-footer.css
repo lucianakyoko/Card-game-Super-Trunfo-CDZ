@@ -1,6 +1,5 @@
 .footer {
   width: 90%;
-
   margin: 1rem auto auto auto;
   position: relative;
 
@@ -13,11 +12,13 @@
 }
 
 .footer_social_icons a{
+  border-radius: 12px;
+  margin-left: 1rem;
   transition: box-shadow .8s ease;
 }
 
 .footer_social_icons a:hover{
-  box-shadow: 4px 8px 8px var(--color-dark-green);
+  box-shadow: 4px 8px 8px var(--color-black);
 }
 
 .footer_result {
