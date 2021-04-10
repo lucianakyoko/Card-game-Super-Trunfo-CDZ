@@ -15,7 +15,7 @@
   align-items: center;
 
   position: relative;
-  top: 10rem;
+  top: 1rem;
 }
 
 .play_btns p:first-child {
@@ -27,6 +27,7 @@
 .play_btns .button {
   width: 100%;
   margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .play_btns .button[disabled] {
@@ -44,7 +45,7 @@
   margin-top: 4rem;
   padding: 1rem;
 
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 2;
   text-align: center;
   color: var(--color-white);
