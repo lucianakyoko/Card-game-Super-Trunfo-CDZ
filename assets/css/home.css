@@ -31,6 +31,32 @@
   margin-top: 1rem;
 }
 
+[aria-label] {
+  position: relative;
+  }
+  
+  [aria-label]::after {
+  width: 300px;
+
+  content: attr(aria-label);
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0px;
+  /* z-index: 5000; */
+  pointer-events: none;
+  padding: 4rem;
+  text-decoration: none;
+  font-size: .9em;
+  line-height: 2;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  }
+  
+  [aria-label]:hover::after {
+  display: block;
+  }
+
 .first_step p,
 .second_step label {
   font-size: 2rem;
@@ -64,3 +90,4 @@
   margin-top: 2.4rem;
   margin-left: 15rem;
 }
+
