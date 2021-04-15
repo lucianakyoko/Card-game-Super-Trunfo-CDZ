@@ -96,11 +96,11 @@
   transform-style: preserve-3d;
   margin: 0;
 }
-
+/* 
 .player_card:hover,
 .opponent_card:hover {
   transform: rotateY(180deg);
-}
+} */
 
 .player_card figure,
 .opponent_card figure{
@@ -117,9 +117,10 @@
 
 .player_card-front h2,
 .opponent_card-front h2 {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.712);
+   color: var(--color-white);
   font-size: 1.2rem;
+  line-height: 1.5;
   text-transform: uppercase;
   padding: 1rem;
 }
@@ -181,7 +182,7 @@
 /* CARD PLAYER SIDE: */
 .player_card-front {
   background-color: var(--color-medium-gray);
-  background-image: url(../img/Knights/bronze/Shiryu.png);
+  /* background-image: url(../img/Knights/bronze/Shiryu.png); */
 }
 
 .player_card-front span {
@@ -197,7 +198,7 @@
 /* CARD OPPONENT SIDE: */
 .opponent_card-front {
   background-color: var(--color-pink);
-  background-image: url(../img/Knights/bronze/Seiya.png);
+  /* background-image: url(../img/Knights/bronze/Seiya.png); */
 }
 .opponent_card-front span {
   background-color: var(--color-medium-pink);
