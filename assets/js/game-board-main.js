@@ -94,3 +94,28 @@ playerScore.innerHTML = `
 <p class="scoreboard_name">pts</p>
 </div>
 `
+
+
+/* Distribuição inicial das cartas: */
+function cardDistribution(oldArrayOfAllKnights) {
+  const firstDeck = [];
+
+  while(firstDeck.length < allknights.length / 2) {
+    let index = Math.floor(Math.random() * allknights.length);
+
+    if(firstDeck.indexOf(oldArrayOfAllKnights[index]) < 0) {
+      firstDeck.push(oldArrayOfAllKnights[index]);
+    }
+  }
+
+  return firstDeck;
+}
+
+const playerDeck = cardDistribution(allknights);
+const opponentDeck = [];
+
+allknights.forEach(element => {
+  if(playerDeck.indexOf(element) == -1) {
+    opponentDeck.push(element)
+  }
+});
