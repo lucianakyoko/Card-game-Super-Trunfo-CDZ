@@ -63,3 +63,23 @@ const silverKnights = [algethi, algol, babel, capella, dante, dio, jamian, marin
 const allknights = divine.concat(bronzeKnights, noirKnights, goldKnights, silverKnights);
 
 
+/* Pegando dados do input do usuário da home */
+const url = window.location.search;
+url.replace('?', '');
+
+
+const query = location.search.slice(1)
+const partes = query.split('&')
+const data = {};
+
+partes.forEach(parte => {
+  const chaveValor = parte.split('=');
+  const chave = chaveValor[0];
+  const valor = chaveValor[1];
+
+  data[chave] = valor;
+});
+
+ if(data.playerName == '') {
+  data.playerName = 'Player'
+}
