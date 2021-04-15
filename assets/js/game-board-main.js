@@ -133,3 +133,28 @@ divOpponentCardQtd.innerHTML = `
   <p>Cartas do oponente:</p>
   <span>${opponentDeck.length}</span>
 `
+
+/* Sorteando cartas: */
+let playerCard;
+let opponentCard;
+
+const drawCards = document.querySelector('.draw-btn');
+drawCards.addEventListener('click', () => {
+  const playerCardNumber = Math.floor(Math.random() * playerDeck.length);
+  playerCard = playerDeck[playerCardNumber];
+
+  const opponentCardNumber = Math.floor(Math.random() * opponentDeck.length);
+  opponentCard = opponentDeck[opponentCardNumber];
+
+  const divPlayerCard = document.querySelector('.player_card');
+  divPlayerCard.style.transform = `rotateY(180deg)`;
+
+  // const divOpponentCard = document.querySelector('.opponent_card');
+  // divOpponentCard.style.transform = `rotateY(180deg)`;
+
+  document.querySelector('#draw-button').disabled = true;
+  document.querySelector('#play-button').disabled = false;
+
+  displayPlayerCard();
+  displayOpponentCard();
+})
