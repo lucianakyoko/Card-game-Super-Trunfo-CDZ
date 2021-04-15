@@ -24,7 +24,7 @@
         </div>
 
         <div class="player_score">
-          <p class="player_name">Luciana</p>
+          <!-- <p class="player_name">Luciana</p> -->
           <div class="scoreboard">
             <p class="scoreboard_number">1000</p>
             <p class="scoreboard_name">pts</p>
@@ -44,8 +44,8 @@
         <div class="board">
           <div class="player_side">
             <div class="player_card-quantity">
-              <p>Suas cartas:</p>
-              <span>9</span>
+              <!-- <p>Suas cartas:</p>
+              <span>9</span> -->
             </div>
 
             <div class="card_container">
@@ -54,7 +54,7 @@
                   <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
                 </figure>
                 <figure class="player_card-front">
-                  <h2>shiryu de dragão</h2>
+                  <!-- <h2>shiryu de dragão</h2>
                   <span>100</span>
                   <div class="player_card_attributes">
                     <div class="card_attributes-cosmos">
@@ -69,7 +69,7 @@
                       <input type="radio" name="attribute" id="defense" value="defense">
                       <label for="defense">defesa 95</label>
                     </div>
-                  </div>
+                  </div> -->
                 </figure>
               </div>
             </div>
@@ -77,8 +77,8 @@
 
           <div class="play_btns">
             <p>VS</p>
-            <button class="button">Sortear carta</button>
-            <button class="button" disabled>Jogar</button>
+            <button class="button draw-btn" id="draw-button">Sortear carta</button>
+            <button class="button play-btn" id="play-button">Jogar</button>
             <p class="turn_play">Sua vez de escolher o atributo.</p>
           </div>
 
@@ -94,7 +94,7 @@
                   <img src="../img/card.png" alt="Imagem dos cavaleiros do zodíaco no verso da carta">
                 </figure>
                 <figure class="opponent_card-front">
-                  <h2>shiryu de dragão</h2>
+                  <!-- <h2>shiryu de dragão</h2>
                   <span>100</span>
                   <div class="opponent_card_attributes">
                     <div class="card_attributes-cosmos">
@@ -109,7 +109,7 @@
                       <input type="radio" name="attribute" id="defense" value="defense">
                       <label for="defense">defense 95</label>
                     </div>
-                  </div>
+                  </div> -->
                 </figure>
               </div>
             </div>
@@ -184,7 +184,6 @@
       </footer>
     </div>
 
-    <script src="../js/Knights.js" type="module"></script>
-    <script src="../js/cards.js" type="module"></script>
+     <script src="../js/game-board-main.js" defer></script>
   </body>
 </html>
