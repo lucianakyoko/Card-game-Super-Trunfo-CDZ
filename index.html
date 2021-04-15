@@ -20,30 +20,31 @@
         <p>super Trunfo</p>
       </div>
 
-      <div class="right_side">
+      <form method="GET" action="./assets/pages/board-game.html" class="right_side">
         <div class="first_step">
           <p>1°Escolha o tipo de partida:</p>
           <div class="first_step-option">
-            <input type="radio" id="score" name="game-type" value="score" checked> 
+            <input type="radio" id="score" name="gameType" 
+            value="score" checked> 
             <label for="score" aria-label="O vencedor é aquele que acumular a maior pontuação. O jogo termina quando as cartas distribuídas acabam">Por pontuação</label>                  
           </div>
 
           <div class="first_step-option">
-            <input type="radio" id="allcards" name="game-type" value="allcards" > 
+            <input type="radio" id="allcards" name="gameType" value="allcards" > 
             <label for="allcards" aria-label="O vencedor é aquele que conseguir acumular todas as cartas do jogo. O jogo termina quando um dos jogadores pega todas as cartas do seu oponente">Pegar todas as cartas do oponente</label>
           </div>
         </div>
 
         <div class="second_step">
           <label for="player-name">2°Digite seu nome:</label>
-          <input type="text" name="player-name" id="player-name">
+          <input type="text" name="playerName" id="player-name">
         </div>
 
         <button class="button home-btn">Entrar</button>
-      </div>
+      </form>
   </div>
   </div>
 
-  <script src="./assets/js/game-type.js" type="module"></script>
+ <script src="./assets/js/home.js" defer type="module"></script>
 </body>
 </html>
