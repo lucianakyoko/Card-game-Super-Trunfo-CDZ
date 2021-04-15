@@ -186,3 +186,30 @@ function displayPlayerCard() {
   divPlayerCardsFront.style.backgroundImage = `url(${playerCard.image})`;
   divPlayerCardsFront.innerHTML = knightName + cardScore + divPlayerCardsAttibute;
 }
+
+/* Mostrando a carta sorteada e seus atributos (cartas do Oponente): */
+function displayOpponentCard() {
+  const divOpponentCardsFront = document.querySelector('.opponent_card-front');
+  
+  const knightName = `<h2>${opponentCard.knight}</h2>`;
+  const cardScore = `<span>${opponentCard.score}</span>`;
+  const divOpponentCardsAttibute = `
+  <div class="opponent_card_attributes">
+    <div class="card_attributes-cosmos">
+      <input type="radio" name="attribute" id="cosmo" value="cosmo">
+      <label for="cosmo">cosmo ${opponentCard.attributes.cosmos}</label>
+    </div>
+    <div class="card_attributes-attack">
+      <input type="radio" name="attribute" id="attack" value="attack">
+      <label for="attack">ataque ${opponentCard.attributes.attack}</label>
+    </div>
+    <div class="card_attributes-defense">
+      <input type="radio" name="attribute" id="defense" value="defense">
+      <label for="defense">defesa ${opponentCard.attributes.defense}</label>
+    </div>
+  </div>
+  `;
+
+  divOpponentCardsFront.style.backgroundImage = `url(${opponentCard.image})`;
+  divOpponentCardsFront.innerHTML = knightName + cardScore + divOpponentCardsAttibute;
+}
