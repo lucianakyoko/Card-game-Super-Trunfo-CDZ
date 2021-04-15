@@ -83,3 +83,14 @@ partes.forEach(parte => {
  if(data.playerName == '') {
   data.playerName = 'Player'
 }
+
+/* Adicionando o nome do jogador no placar: */
+const playerScore = document.querySelector('.player_score');
+
+playerScore.innerHTML = `
+<p class="player_name">${data.playerName}</p>
+<div class="scoreboard">
+<p class="scoreboard_number">1000</p>
+<p class="scoreboard_name">pts</p>
+</div>
+`
