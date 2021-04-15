@@ -119,3 +119,17 @@ allknights.forEach(element => {
     opponentDeck.push(element)
   }
 });
+
+
+/* Adicionando o total de cartas de cada jogador: */
+const divPlayerCardsQtd = document.querySelector('.player_card-quantity');
+divPlayerCardsQtd.innerHTML = `
+  <p>Suas cartas:</p>
+  <span>${playerDeck.length}</span>
+`
+
+const divOpponentCardQtd = document.querySelector('.opponent_card-quantity');
+divOpponentCardQtd.innerHTML = `
+  <p>Cartas do oponente:</p>
+  <span>${opponentDeck.length}</span>
+`
