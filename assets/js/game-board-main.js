@@ -158,3 +158,31 @@ drawCards.addEventListener('click', () => {
   displayPlayerCard();
   displayOpponentCard();
 })
+
+/* Mostrando a carta sorteada e seus atributos (cartas do jogador): */
+function displayPlayerCard() {
+ 
+  const divPlayerCardsFront = document.querySelector('.player_card-front');
+  
+  const knightName = `<h2>${playerCard.knight}</h2>`;
+  const cardScore = `<span>${playerCard.score}</span>`;
+  const divPlayerCardsAttibute = `
+  <div class="player_card_attributes">
+    <div class="card_attributes-cosmos">
+      <input type="radio" name="attribute" id="cosmo" value="cosmo">
+      <label for="cosmo">cosmo ${playerCard.attributes.cosmos}</label>
+    </div>
+    <div class="card_attributes-attack">
+      <input type="radio" name="attribute" id="attack" value="attack">
+      <label for="attack">ataque ${playerCard.attributes.attack}</label>
+    </div>
+    <div class="card_attributes-defense">
+      <input type="radio" name="attribute" id="defense" value="defense">
+      <label for="defense">defesa ${playerCard.attributes.defense}</label>
+    </div>
+  </div>
+  `;
+
+  divPlayerCardsFront.style.backgroundImage = `url(${playerCard.image})`;
+  divPlayerCardsFront.innerHTML = knightName + cardScore + divPlayerCardsAttibute;
+}
