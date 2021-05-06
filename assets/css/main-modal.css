@@ -1,0 +1,138 @@
+.modal {
+  width: 80%; height: 80%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  position: absolute;
+  top: 18vh; left: 10%;
+
+  border: 12px solid var(--color-black);
+  border-radius: 12px;
+  background-color: var(--color-gray);
+  z-index: 2;
+
+  display: none;
+}
+
+.modal_left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal_left p:first-child{
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: var(--color-black);
+}
+
+.modal_frase {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  line-height: 2;
+  text-align: center;
+  padding: 1rem;
+
+  animation: blink .5s ease-in infinite;
+}
+
+table th {
+  font-size: 1.8rem;
+  padding: 1.8rem;
+}
+
+table th:last-child {
+  border-left:  4px solid var(--color-black);
+}
+
+.modal_table-line td{
+  text-align: center;
+  border-bottom: 2px solid var(--color-black);
+  font-size: 1rem;
+  padding: 1.2rem;
+}
+
+.modal_table-line td:first-child{
+  border-bottom:none;
+  text-align: right;
+}
+
+.modal_table-line td:last-child{
+  border-left: 4px solid var(--color-black);
+}
+
+tbody .modal_table-line:last-child td:first-child{
+  padding-top: 1.8rem;
+  text-align: right;
+  border-bottom:none;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+tbody .modal_table-line:last-child{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.modal_bottom {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.modal-btn {
+  font-size: 1.6rem;
+  padding: 2rem;
+  width: 30rem;
+}
+
+.modal_social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal_social_icons img {
+  margin-left: 1rem;
+  border-radius: 8px;
+  
+  transition: all .5s ease-in-out;
+}
+.modal_social_icons img:hover {
+  box-shadow: 4px 8px 8px var(--color-black);
+}
+
+/* RIGHT: */
+.modal_right {
+  width: 40%; height: 100%;
+  overflow: hidden;
+}
+.modal_right img {
+  width: 90%
+}
+
+.modal_copy p{
+  color: var(--color-black);
+}
+.modal_copy span a{
+  color:royalblue;
+}
+
+/* ANIMATION: */
+
+@keyframes blink {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
