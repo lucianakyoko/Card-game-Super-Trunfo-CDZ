@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 2rem;
+  margin-left: 12rem;
+}
+
+.footer_social_icons a{
+  margin-left: 1rem;
+}
+
+.footer_social_icons img {
+  height: 2.5rem;
+}
+
+.copy {
+  padding: 1rem;
+}
+
+.copy p,
+.copy span a{
+  font-size: .9rem;
+  color: var(--color-white);
+}
+
+.copy span a {
+  color: var(--color-light-green);
+}
+.copy span a:hover {
+  text-decoration: underline;
+}
