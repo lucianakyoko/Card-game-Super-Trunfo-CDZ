@@ -1,215 +1,49 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="sortcut icon" href="./assets/img/icons/icon.jpg" type="image/x-icon"/>
     <title>Super Trunfo | Cavaleiros do zodíaco</title>
-    
-    <link rel="sortcut icon" href="../img/icons/icon.jpg" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/main-board-header.css">
-    <link rel="stylesheet" href="../css/main-board.css">
-    <link rel="stylesheet" href="../css/main-footer.css">
-    <link rel="stylesheet" href="../css/main-modal.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 
-    <script src="../js/index.js" type="module"></script>
   </head>
-  
   <body>
     <div class="page_container">
-      <header>
-        <a class="back" href='/index.html'>
-          <p>voltar</p>
-          <p>&#x021A9</p>
-        </a>
-
-        <div class="play_number">
-          <!-- <p>0</p>
-          <p>jogadas</p> -->
+      <div class="home">
+        <div class="left_side">
+          <img src="./assets/img/cards.png" alt="imagem do verso do baralho dos Cavaleiros dos Zodíaco">
+          <h1>super Trunfo</h1>
         </div>
-
-        <div class="score_boards">
-          <div class="player_score_board">
-            <!-- <p class="player_name">Player:</p>
-            <div class="player_score">
-              <p>0</p>
-              <p>pts</p>
-            </div> -->
-          </div>
-
-          <div class="opponent_score_board">
-            <!-- <p class="opponent_name">Oponente:</p>
-            <div class="opponent_score">
-              <p>0</p>
-              <p>pts</p>
-            </div> -->
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <div class="board">
-          <div class="player_side">
-            <div class="player_cards_qtds">
-              <!-- <p>Suas cartas:</p>
-              <p>0</p> -->
+      
+        <form class="right_side" method="GET" action="./assets/pages/game-board.html">
+          <div class="first_step">
+            <p class="first_step_description">1º Escolha o tipo de partida:</p>
+            <div class="first_step_option">
+              <input type="radio" name="gameType" id="score" value="score" checked>
+              <label for="score" aria-label="O vencedor é aquele que acumular a maior pontuação. O jogo termina quando as cartas distribuídas acabam">Por pontuação</label>
             </div>
 
-            <div class="card_container">
-              <div class="player_card">
-                <figure class="player_card-back">
-                  <img src="../img/card.png" alt="imagem dos cavaleiros do zodíaco no verso da carta">
-                </figure>
-
-                <figure class="player_card_front">
-                  <!-- <h2>shiryu de dragão</h2>
-                  <span>100</span>
-
-                  <div class="player_card_attributes">
-                    <div class="card_attribute_cosmos">
-                      <input type="radio" name="attribute_player" id="cosmoPlayer">
-                      <label for="cosmoPlayer">cosmo 100</label>
-                    </div>
-                    <div class="card_attribute_attack">
-                      <input type="radio" name="attribute_player" id="attackPlayer">
-                      <label for="attackPlayer">ataque 100</label>
-                    </div>
-                    <div class="card_attribute_defense">
-                      <input type="radio" name="attribute_player" id="defensePlayer">
-                      <label for="defensePlayer">defesa 100</label>
-                    </div>
-                  </div> -->
-                </figure>
-              </div>
+            <div class="first_step_option">
+              <input type="radio" name="gameType" id="allcards" value="allcards">
+              <label for="allcards" aria-label="O vencedor é aquele que conseguir acumular todas as cartas do jogo. O jogo termina quando um dos jogadores pega todas as cartas do seu oponente">Pegar todas as cartas do oponente</label>
             </div>
           </div>
 
-          <div class="play_btns">
-            <p class="vs">Vs</p>
-            <button class="button draw-btn" >Sortear carta</button>
-            <button class="button play-btn" disabled>Jogar</button>
-            <div class="turn">
-              <!-- <p>Sua vez de escolher um atributo</p> -->
-            </div>
-            <div class="result">
-              <!-- <p>Você venceu!</p>
-              <p>x</p> -->
-            </div>
-
-          </div>
-          
-          <div class="opponent_side">
-            <div class="opponent_cards_qtds">
-              <!-- <p>Cartas do oponente:</p>
-              <p>0</p> -->
-            </div>
-
-            <div class="card_container">
-              <div class="opponent_card">
-                <figure class="opponent_card-back">
-                  <img src="../img/card.png" alt="imagem dos cavaleiros do zodíaco no verso da carta">
-                </figure>
-
-                <figure class="opponent_card_front">
-                  <!-- <h2>seiya de pegasus</h2>
-                  <span>100</span>
-
-                  <div class="opponent_card_attributes">
-                    <div class="card_attribute_cosmos">
-                      <input type="radio" name="attribute_opponent" id="cosmoOpponent">
-                      <label for="cosmoOpponent">cosmo 100</label>
-                    </div>
-                    <div class="card_attribute_attack">
-                      <input type="radio" name="attribute_opponent" id="attackOpponent">
-                      <label for="attackOpponent">ataque 100</label>
-                    </div>
-                    <div class="card_attribute_defense">
-                      <input type="radio" name="attribute_opponent" id="defenseOpponent">
-                      <label for="defenseOpponent">defesa 100</label>
-                    </div>
-                  </div> -->
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal">
-          <div class="modal_left">
-            <!-- <p>O jogo terminou.</p>
-            <p class="modal_frase">Parabéns!</p>
-
-            <div class="modal_table">
-              <table>
-                <thead class="modal_table-head">
-                  <tr>
-                    <th></th>
-                    <th>Luciana</th>
-                    <th>Oponente</th>
-                  </tr>
-                </thead>
-                <tbody class="modal_table-body">
-                  <tr class="modal_table-line">
-                    <td>vitória</td>
-                    <td>1</td>
-                    <td>0</td>
-                  </tr>
-                  <tr class="modal_table-line">
-                    <td>empate</td>
-                    <td>0</td>
-                    <td>0</td>
-                  </tr>
-                  <tr class="modal_table-line">
-                    <td>derrota</td>
-                    <td>0</td>
-                    <td>1</td>
-                  </tr>
-                  <tr class="modal_table-line">
-                    <td>pontos <br>acumulados</td>
-                    <td>1000</td>
-                    <td>0</td>
-                  </tr>
-                </tbody>
-              </table>             
-            </div>
-
-            <div class="modal_bottom">
-              <a class="button modal-btn" href='/index.html'>Jogar novamente</a>
-              <div class="modal_social_icons">
-                <a href="http://www.instagram.com/luciana_kyoko/" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-instagram-black.svg" alt="Ícone do Instagram"></a>
-                <a href="http://github.com/lucianakyoko" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-github-black.svg" alt="Ícone do GitHub"></a>
-                <a href="http://www.linkedin.com/in/lucianakyoko/" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-linkedin-black.svg" alt="Ícone do LinkedIn"></a>
-              </div>
-            </div>  -->
+          <div class="second_step">
+            <p class="second_step_description">2º Digite seu nome:</p>
+            <input type="text" name="playerName" id="playerName">
           </div>
 
-          <div class="modal_right">
-            <img src="../img/cdz.png" alt="Imagem dos Cavaleiros do Zodíaco junto com a Deusa Atena">
-            <div class="copy modal_copy">
-              <p>designed and developed with &#9829 by <span><a href="https://lucianakyoko.netlify.app" target="_blank" rel="noopener noreferrer">Lukyoko</a></span>.</p>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <footer>
-        <div class="footer">
-          <div class="footer_social_icons">
-            <a href="http://www.instagram.com/luciana_kyoko/" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-instagram-white.svg" alt="Ícone do Instagram"></a>
-            <a href="http://github.com/lucianakyoko" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-github-white.svg" alt="Ícone do GitHub"></a>
-            <a href="http://www.linkedin.com/in/lucianakyoko/" target="_blank" rel="noopener noreferrer"><img src="../img/icons/icon-linkedin-white.svg" alt="Ícone do LinkedIn"></a>
-          </div>
-
-          <div class="copy">
-            <p>designed and developed with &#9829 by <span><a href="https://lucianakyoko.netlify.app" target="_blank" rel="noopener noreferrer">Lukyoko</a></span>.</p>
-          </div>
-        </div>
-      </footer>
+          <button class="button home-btn">entrar</button>
+        </form>
+      </div>
     </div>
+
   </body>
 </html>
