@@ -1,0 +1,61 @@
+:root {  
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-dark-green: #071815;
+  --color-medium-green: #579A8E;
+  --color-light-green: #B5FBFB;
+
+  --color-gray: #c4c4c4;
+  --color-medium-gray: #9BC0C0;
+
+  --color-pink: #D2B7B7; 
+  --color-medium-pink: #C68888; 
+  --color-light-pink: #FCB6B6; 
+
+  --font-press:'Press Start 2P', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--font-press);
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.page_container {
+  width: 100vw; height: 100vh;
+
+  background: url(../img/scenery-bg.png) no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.button {
+  background-color: var(--color-dark-green);
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.9);
+  color: var(--color-white);
+  font-family: var(--font-pressstar);
+  font-size: 2.4rem;
+  padding: 1rem;
+
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.button:hover {
+  background-color: var(--color-medium-green);
+}
