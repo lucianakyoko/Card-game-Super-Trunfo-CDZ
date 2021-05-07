@@ -60,6 +60,9 @@ divNumberOfCardsOpponent.innerHTML = `
 /* BOTÃO "Sortear Carta:" */
 const drawBtn = document.querySelector('.draw-btn');
 drawBtn.addEventListener('click', () => {  
+  document.querySelector('.play-btn').disabled = true;
+  document.querySelector('.draw-btn').disabled = true;
+
   displayPlayerCard();
   displayOpponentCard();
 
