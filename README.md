@@ -1,5 +1,6 @@
 # Card game - Super Trunfo CDZ
  Jogo de cartas inspirado no Super Trunfo da Grow.
+ Para jogar, basta clicar [aqui](supertrunfo-cdz.netlify.app).
 
 # Tecnologias utilizadas:
  - JavaScript
