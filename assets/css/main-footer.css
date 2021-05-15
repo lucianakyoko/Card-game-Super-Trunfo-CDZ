@@ -27,3 +27,11 @@
 .copy span a:hover {
   text-decoration: underline;
 }
+
+/* MEDIA QUERIES: */
+@media (max-width: 720px) and (orientation: landscape) {
+  .footer {
+   display: none;
+  }
+  
+}

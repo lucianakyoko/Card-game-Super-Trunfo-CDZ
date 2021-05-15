@@ -136,3 +136,69 @@ tbody .modal_table-line:last-child{
     opacity: 1;
   }
 }
+
+/* MEDIA QUERIES: */
+@media (max-width: 720px) and (orientation: landscape) {
+  .modal {
+    width: 100%; height: 90%;
+    top: 10vh; left: 0;
+  }
+  
+  .modal_frase {
+    font-size: 1rem;
+    margin: .5rem 0;
+  }
+  
+  table th {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+  
+  .modal_table-line td{
+    padding: 1rem;
+  }
+
+  tbody .modal_table-line:last-child td:first-child{
+    font-size: 1rem;
+  }
+  
+  tbody .modal_table-line:last-child{
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .modal_bottom {
+    width: 20rem;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+  }
+  .modal-btn {
+    width: 20rem;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .modal_social_icons {
+    margin-top: 2rem;
+  }
+  
+  /* RIGHT: */
+  .modal_right {
+    position: relative;
+  }
+
+  .modal_right img {
+    display: none;
+  }
+  .modal_copy p{
+    position: absolute;
+    color: var(--color-black);
+    bottom: 2rem;
+  }
+  .modal_copy span a{
+    color:royalblue;
+  }
+}

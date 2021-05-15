@@ -250,3 +250,139 @@
 .opponent_card_front .card_attribute_defense:hover {
   background-color: var(--color-light-pink);
 }
+
+.change_to_landscape_container {
+  display: none;
+}
+
+/* MEDIA QUERIES: */
+@media (min-width: 320px) and (orientation: portrait){
+  header,
+  .board,
+  footer {
+    display: none;
+  }
+
+  .page_container {
+    display: flex;
+  }
+
+  .change_to_landscape_container {
+    width: 60%;
+    display: block;
+    background-color: var(--color-medium-gray);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 8px solid var(--color-black);
+    border-radius: 12px;
+
+  }
+  .change_to_landscape_image {
+    padding: 2rem;
+  }
+  .change_to_landscape_image img {
+    width: 80%;
+  }
+
+  .change_to_landscape_message {
+    font-size: 1.2rem;
+    padding: 2rem;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 720px) and (orientation: landscape) {
+  .board {
+    width: 100%; 
+    padding: 0 2rem;
+    display: flex;
+  }
+  
+  /* BUTTONS */
+  .play_btns {
+    margin:  1rem;
+  }
+  
+  .play_btns .vs {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .draw-btn,
+  .play-btn {
+    width: 100%;
+  }
+
+  .turn {
+    width: 90%;
+  }
+  
+  .turn p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  
+    margin-top: 1rem;
+  }
+  
+  .result {
+    padding: 6rem 1.2rem;
+    top: 8rem;
+  }
+ 
+  .result p:first-child {
+    font-size: 2.5rem;
+  }
+  
+  .result p:last-child {
+    font-size: 1.6rem;
+  
+    position: absolute;
+    top: 1rem; left: 70rem;
+  }
+    
+  /* CARDS - BOTH SIDES: */
+  .player_side,
+  .opponent_side {
+    padding: .5rem;
+    margin-top: 0rem;
+  }
+  
+  .player_cards_qtds,
+  .opponent_cards_qtds {
+    padding: 0;
+  }
+  
+  .player_cards_qtds p:first-child,
+  .opponent_cards_qtds p:first-child {
+    font-size: 1rem;
+  }
+  
+  .player_cards_qtds p:last-child,
+  .opponent_cards_qtds p:last-child {
+    font-size: 1.2rem;
+  }
+  
+  .card_container {
+    width: 18rem;
+  }
+
+  .player_card_front span,
+  .opponent_card_front span {
+    left: 10rem;
+  }
+  
+  .player_card_attributes,
+  .opponent_card_attributes {
+    top: 5rem;
+  }
+  
+  .card_attribute_cosmos,
+  .card_attribute_attack,
+  .card_attribute_defense {
+    width: 95%;
+    padding: .6rem;
+  }
+}
