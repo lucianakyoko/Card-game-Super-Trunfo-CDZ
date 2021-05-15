@@ -23,6 +23,27 @@
   margin-top: 1rem;
 }
 
+.social {
+  margin-top: 8rem;
+}
+
+.social_icons {
+  padding: 1rem;
+}
+
+.copy {
+  color: var(--color-gray);
+  font-size: 1.6rem;
+}
+
+.copy p span a {
+  font-size: 1.8rem;
+  color: var(--color-medium-green);
+}
+.copy p span a:hover {
+  text-decoration: underline;
+}
+
 .first_step,
 .second_step {
   border: 8px solid var(--color-black);
@@ -156,6 +177,29 @@
       font-size: 2.4rem;
     }
     
+    .social {
+      margin-top: 0;
+      padding: 1rem;
+    }
+    
+    .social_icons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .copy {
+      color: var(--color-gray);
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    
+    .copy p span a {
+      font-size: 1rem;
+    }
+  
+
     .right_side {
       padding: 2rem;
     }
